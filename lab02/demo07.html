@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Định nghĩa css class - định nghĩa class trước (.tên class)sao đó có thể áp vào nhiều vùng khác nhau của file html-->
     <title>Selector - class</title>
+    <style type="text/css">
+        .section-title{
+            font-weight: bold;
+            color: #cc3366;
+        }
+        .article-title{
+            font-style: italic;
+            color: #3366cc;
+        }
+        .content{
+            font-style: italic;
+            color: #66cc33;
+        }
+        .title{
+            color: #fff;
+            background-color: #cc3366;
+            padding-left: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>SELECTOR - Class</h1>
+    <h1 class="title">Selector - Class</h1>
     <ul>
-        <li>Section 1
-            
+        <li class="section-title">Section 1
+            <ol type="a" class="article-title">
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+                <li>Article 4</li>
+            </ol>
         </li>
-        <li>Section 2</li>
-        <li>Section 3</li>
+        <li class="section-title">Section 2
+            <ul class ="content">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos numquam in nostrum eos illum. Magnam odio praesentium reiciendis dolorem error velit beatae. Neque est alias sint amet totam voluptas iusto.</li>
+                <li>Odio neque et consequatur tempore magni quaerat similique quam numquam quisquam voluptas, voluptatum provident eveniet illo nostrum nobis! Nemo exercitationem accusamus vel suscipit ea beatae voluptatem mollitia impedit, illum dolore?</li>
+                <li>Culpa amet ratione repudiandae consectetur quaerat non sit magni distinctio enim explicabo aspernatur, iusto id eum officia nostrum. Iure doloribus dicta ab labore harum laudantium, ut est velit voluptas quidem?</li>
+            </ul>
+        </li>
+        <li class="section-title">Section 3</li>
     </ul>
 </body>
 </html>
