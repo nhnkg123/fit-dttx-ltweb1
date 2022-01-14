@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dinh nghia phan cap, vi du o day la chi format the div trong li thoi-->
     <title>Selector  - Contextual</title>
+    <style type="text/css">
+        h1{color: #cc3366;}
+        div{color: #3549fa;}
+        p{color: #66cc66;}
+
+        li div {
+            background-color: #b1b2b6;
+            margin: 5px;
+        }
+        /**dau > la chi format div la con truc tiep cua li*/
+        li>div {
+            font-style: italic;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        div * {
+            border: 1px solid #cc3366;
+        }
+        div span {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
     <h1>SELECTOR - Contextual</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit iusto nulla quibusdam repellendus tempora aspernatur ad a deserunt. Laboriosam nobis rem voluptates dicta inventore. Obcaecati, aperiam cupiditate. Officiis, odio?</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque eaque veritatis deserunt ullam molestias vitae culpa, pariatur odit dolorum quas, sed cumque? Magnam, voluptas vitae praesentium quibusdam ad quo nostrum?</p>
+    <p>Quam id, et eius magni vel commodi, exercitationem hic placeat mollitia quod laboriosam nulla ab sequi impedit porro unde perferendis tenetur accusamus dolore rerum cupiditate repellendus natus voluptatum quaerat. Distinctio.</p>
+    <ul>
+        <li>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, quidem. Illum, tempore quae voluptates expedita pariatur ipsam, similique hic alias itaque neque adipisci fugit possimus ducimus blanditiis provident sit magni?</div>
+        </li>
+        <li>
+            <div>Explicabo, amet? Placeat enim, mollitia consequatur impedit repellendus dolores, in nostrum iusto recusandae quasi labore ad porro inventore hic doloremque amet pariatur rem corporis, debitis voluptatem atque tempora. Impedit, suscipit.</div>
+        </li>
+        <li>
+            <div>Vitae, officia explicabo repellat similique, placeat esse temporibus eos fuga, dolore sint quidem eaque. Maiores, quam alias, quae magnam vitae odit aliquid consectetur aspernatur eligendi quia fugiat dicta. Eveniet, illo!</div>
+        </li>
+        <li>
+            <section>
+                <div>Section --> DIV</div>
+            </section>
+        </li>
+    </ul>
+    <div><b>Lorem</b> ipsum dolor sit amet, <i>consectetur</i> adipisicing elit. Incidunt vel dicta <span> est dolores ea</span> totam consequuntur maxime <del> nisi! Nobis cupiditate</del> rerum odit molestias quos! Laborum architecto dolore exercitationem.</div>
 </body>
 </html>
