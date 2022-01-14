@@ -5,8 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selector - Pesudo</title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+            /**inline-block la cho menu xep hang ngang*/
+            display: block;
+            width: 200px;
+            height: 35px;
+            background-color: #cc3366;
+            color: #fff;
+            /**margin: 1px;*/
+            /**margin: 1px 2px;*/
+            /**margin: 1px 2px 3px 4px;*/
+            margin-bottom: 1px;
+            /**text-align: center;(can giua chu trong o)*/
+            padding:0 0 0 10px ;
+            /**line-height:;(can giua theo chieu cao o, 35px=chieu cao o*/
+            line-height:35px ;
+        }
+        /**pesudo*/
+        a:hover{
+            background-color: #33cc66;
+            font-size: 1.5rem;
+        }
+
+        a:active{
+            background-color: #3366cc;
+        }
+
+    </style>
 </head>
 <body>
    <h1>SELECTOR - Pesudo</h1> 
+   <a href="#">Menu item 1</a>
+   <a href="#">Menu item 2</a>
+   <a href="#">Menu item 3</a>
+   <a href="#">Menu item 4</a>
+   <a href="#">Menu item 5</a>
 </body>
 </html>
