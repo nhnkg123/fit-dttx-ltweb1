@@ -39,3 +39,41 @@ body{
     color: #fff;
     clear: both;/*xóa float đi*/
 }
+
+.menu, .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    padding-left: 10px;
+    background-color: #7b1fa2;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 1px;
+}
+
+.menu li:hover{
+    background-color: #009688;
+}
+/*Khi menu hover lên thì submenu visible */
+.menu li:hover .submenu{
+    visibility: visible;
+}
+
+.submenu{
+    /*absolute submenu hiện lên trên menu chính*/
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 90px;
+    visibility: hidden;
+}
+.submenu li {
+    background-color: #455a64;
+}
+.submenu li:hover{
+    background-color: #ffc107;
+    color: #000;
+}
