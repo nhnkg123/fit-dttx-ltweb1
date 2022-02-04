@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    background-color: #009688;
+    min-height: 100vh;
+}
+
+#header{
+    background-color: #e040fb;
+    min-height: 100px;
+    text-align: center;
+    /* text align căn giữa dòng còn line-height là để căn giữa theo chiều dọc*/
+    line-height: 100px;
+}
+
+#left-sidebar, #right-sidebar{
+    background-color: #ff9800;
+    min-height: 200px;
+    width:20% ;
+    /*ép left and right sidebar nổi lên trên content và footer tuy nhiên đè lên luôn => phải float luôn content left*/
+    float: left;
+}
+
+#content{
+    background-color: #8bc34a;
+    min-height: 300px;
+    width: 60%;
+    /*nhưng ép content rồi footer vẫn bị ép lên theo right sidebar =>clear both ở footer */
+    float: left;
+}
+
+#footer{
+    background-color: #03a9f4;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    clear: both;/*xóa float đi*/
+}
