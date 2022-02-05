@@ -4,7 +4,7 @@ body{
 }
 #container{
     background-color: #009688;
-    min-height: 100vh;
+    margin-bottom: 50px;
 }
 
 #header{
@@ -25,7 +25,7 @@ body{
 
 #content{
     background-color: #8bc34a;
-    min-height: 300px;
+    min-height: 3000px;
     width: 60%;
     /*nhưng ép content rồi footer vẫn bị ép lên theo right sidebar =>clear both ở footer */
     float: left;
@@ -76,4 +76,15 @@ body{
 .submenu li:hover{
     background-color: #ffc107;
     color: #000;
+}
+
+.ad{
+    width: 100%;
+    background-color: #e91e63;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
 }
