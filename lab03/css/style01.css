@@ -3,12 +3,12 @@ body{
     padding: 0;
 }
 #container{
-    background-color: #009688;
+    background-color: rgb(217, 217, 245);
     margin-bottom: 50px;
 }
 
 #header{
-    background-color: #e040fb;
+    background-color: brown
     min-height: 100px;
     text-align: center;
     /* text align căn giữa dòng còn line-height là để căn giữa theo chiều dọc*/
@@ -45,6 +45,9 @@ body{
     padding: 0;
     margin: 0;
 }
+.menu{
+
+}
 
 .menu li{
     padding-left: 10px;
@@ -56,7 +59,7 @@ body{
 }
 
 .menu li:hover{
-    background-color: #009688;
+    background-color: rgb(150, 235, 150)
 }
 /*Khi menu hover lên thì submenu visible */
 .menu li:hover .submenu{
@@ -87,4 +90,52 @@ body{
     text-align: center;
     position: fixed;
     bottom: 0;
+}
+-----------------------------------------------
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    background-color: rgb(218, 129, 129);
+}
+#static-menu{
+    background-color: rgb(158, 158, 228);
+    min-height: 50px;
+}
+
+#header{
+    background-color: #76d6cd;;
+    min-height: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#left-sidebar, #right-sidebar{
+    background-color: rgb(240, 240, 171);
+    min-height: 200px;
+    width:20% ;
+    float: left;
+}
+
+#content{
+    background-color: rgb(150, 235, 150);
+    min-height: 300px;
+    width: 60%;
+    float: left;
+}
+
+#footer{
+    background-color:  brown;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    clear: both;
+}
+.sidebar{
+    background-color: rgb(224, 179, 95)
+    min-height: 200px;
+    width: 30%;
+    margin-left: 20px;
 }
